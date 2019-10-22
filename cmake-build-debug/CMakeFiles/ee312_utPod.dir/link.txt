@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\ee312_utPod.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\ee312_utPod.dir/objects.a @CMakeFiles\ee312_utPod.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\ee312_utPod.dir/objects.a -Wl,--no-whole-archive  -o ee312_utPod.exe -Wl,--out-implib,libee312_utPod.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ee312_utPod.dir\linklibs.rsp
