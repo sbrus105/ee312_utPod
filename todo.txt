@@ -1,0 +1,19 @@
+TODO:
+	create Song.h
+	create own driver
+	create destructor
+
+
+Create classes for UtPod and Song with appropriate header files. 
+Implement public methods in the UtPod class to:
+	addSong(Song s)
+	removeSong(Song s)
+	shuffle()
+	showSongList()
+	sortSongList()  
+	getTotalMemory()
+	getRemainingMemory()
+Implement public methods in the Song class to:
+	set and get all instance variables
+	overload ==, <,and > operators (used in sorting)
+		for < and > use artist, then title, then size
