@@ -13,10 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/song.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/song.h" beforeDir="false" afterPath="$PROJECT_DIR$/song.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPod.h" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPodDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPodDriver.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571710376128</updated>
       <workItem from="1571710378678" duration="905000" />
-      <workItem from="1571764279558" duration="1727000" />
+      <workItem from="1571764279558" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -83,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571711086526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Further work on song.cpp and song.h">
+      <created>1571766059088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571766059088</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setting up more files, song.cpp, etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up more files, song.cpp, etc." />
+    <MESSAGE value="Further work on song.cpp and song.h" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further work on song.cpp and song.h" />
   </component>
 </project>
