@@ -9,6 +9,9 @@ This is a basic driver for the UtPod.
 You will want to do more complete testing.
 
 */
+
+//Sam Brus and Collin Torok
+
 #include <cstdlib>
 #include <iostream>
 #include "song.h"

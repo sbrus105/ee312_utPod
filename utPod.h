@@ -1,4 +1,5 @@
-//DOCUMENT HERE
+//Sam Brus and Collin Torok
+
 
 #ifndef UTPOD_H
 #define UTPOD_H
