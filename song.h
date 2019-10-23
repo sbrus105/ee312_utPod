@@ -1,18 +1,25 @@
 //song.h
 //Sam Brus and Collin Torok
 
+using namespace std;
+#include <cstdlib>
+#include <iostream>
+
 class Song
 {
     private:
-        std::string title;
-        std::string artist;
+        string title;
+        string artist;
         int size;
     public:
-        void setTitle(std::string);
-        void setArtist(std::string);
+        Song();
+        Song(string title, string artist, int size);
+        void setTitle(string);
+        void setArtist(string);
         void setSize(int);
 
-        std::string getTitle() const;
-        std::string getArtist() const;
+        string getTitle() const;
+        string getArtist() const;
         int getSize() const;
 };
+

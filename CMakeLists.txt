@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(ee312_utPod
-        song.h
+        Song.h
         utPod.h
         utPodDriver.cpp
-        song.cpp)
+        Song.cpp)

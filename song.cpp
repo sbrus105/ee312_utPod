@@ -5,6 +5,23 @@
 #include <iostream>
 #include "song.h"
 
+//**********************************
+//Default Constructor
+//**********************************
+Song::Song(){
+    artist = "Sam";
+    title = "Horns";
+    size = 12;
+}
+
+//**********************************
+//Specialized Constructor
+//**********************************
+Song::Song(string specialArtist,string specialTitle,int specialSize){
+    artist = specialArtist;
+    title = specialTitle;
+    size = specialSize;
+}
 
 //**********************************
 //Set Song object's title

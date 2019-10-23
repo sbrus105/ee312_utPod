@@ -5,9 +5,7 @@ Roger Priebe
 EE 312 10/16/18
 
 This is a basic driver for the UtPod.
-
 You will want to do more complete testing.
-
 */
 
 //Sam Brus and Collin Torok
@@ -89,6 +87,7 @@ UtPod();
 //set the size to MAX_MEMORY.
 UtPod(int size);
 
+
 /* FUNCTION - int addSong
  * attempts to add a new song to the UtPod
      o returns a 0 if successful
@@ -117,7 +116,6 @@ int removeSong(Song const &s);
    input parms -
    output parms -
 */
-
 void shuffle();
 
 
