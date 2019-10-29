@@ -5,13 +5,15 @@
 #include <iostream>
 #include "song.h"
 
+using namespace std;
+
 //**********************************
 //Default Constructor
 //**********************************
 Song::Song(){
-    artist = "Sam";
+    artist = "Sam Torok";
     title = "Horns";
-    size = 12;
+    size = 42;
 }
 
 //**********************************
@@ -20,26 +22,43 @@ Song::Song(){
 Song::Song(string specialArtist,string specialTitle,int specialSize){
     artist = specialArtist;
     title = specialTitle;
-    size = specialSize;
+    if(specialSize<=0){
+        size = 42; //TODO: Is this the correct way to approach this  user  error?
+    }
+    else{
+        size = specialSize;
+    }
 }
-
+//--------------------------------------------
 //**********************************
 //Set Song object's title
 //**********************************
-void Song::setTitle(std::string s){
-    title = s;
+void Song::setTitle(string t){  //TODO: Wtf
+    title = t;
 }
 
 //**********************************
 //Set Song object's artist
 //**********************************
-void Song::setArtist(std::string s){
-    artist = s;
+void Song::setArtist(string a){
+    artist = a;
 }
 
 //**********************************
 //Set Song object's size
 //**********************************
-void Song::setSize(int i){
-    size = i;
+void Song::setSize(int s){
+    size = s;
+}
+//--------------------------------------------
+string Song::getArtist() const{
+    return artist;
+}
+
+string Song::getTitle() const{
+    return title;
+}
+
+int Song::getSize() const{
+    return size;
 }

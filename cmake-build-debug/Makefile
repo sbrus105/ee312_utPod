@@ -149,6 +149,33 @@ Song.cpp.s:
 	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.s
 .PHONY : Song.cpp.s
 
+stack.obj: stack.cpp.obj
+
+.PHONY : stack.obj
+
+# target to build an object file
+stack.cpp.obj:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.obj
+.PHONY : stack.cpp.obj
+
+stack.i: stack.cpp.i
+
+.PHONY : stack.i
+
+# target to preprocess a source file
+stack.cpp.i:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.i
+.PHONY : stack.cpp.i
+
+stack.s: stack.cpp.s
+
+.PHONY : stack.s
+
+# target to generate assembly for a file
+stack.cpp.s:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.s
+.PHONY : stack.cpp.s
+
 utPodDriver.obj: utPodDriver.cpp.obj
 
 .PHONY : utPodDriver.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... Song.obj
 	@echo ... Song.i
 	@echo ... Song.s
+	@echo ... stack.obj
+	@echo ... stack.i
+	@echo ... stack.s
 	@echo ... utPodDriver.obj
 	@echo ... utPodDriver.i
 	@echo ... utPodDriver.s

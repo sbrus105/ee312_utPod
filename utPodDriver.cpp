@@ -14,6 +14,7 @@ You will want to do more complete testing.
 #include <iostream>
 #include "song.h"
 #include "utPod.h"
+#include "stack.h"
 
 using namespace std;
 
@@ -79,13 +80,22 @@ int main(int argc, char *argv[])
 
 //Default constructor
 //set the memory size to MAX_MEMORY
-UtPod();
+UtPod::UtPod(){
+    memSize = MAX_MEMORY;
+}
 
 //Constructor with size parameter
 //The user of the class will pass in a size.
 //If the size is greater than MAX_MEMORY or less than or equal to 0,
 //set the size to MAX_MEMORY.
-UtPod(int size);
+UtPod::UtPod(int size){
+    if((size<=0)||(size>MAX_MEMORY)){
+        memSize = MAX_MEMORY;
+    }
+    else{
+        memSize = size;
+    }
+}
 
 
 /* FUNCTION - int addSong
@@ -96,7 +106,9 @@ UtPod(int size);
  input parms -
  output parms -
 */
-int addSong(Song const &s);
+int addSong(Song const &s){
+    //call push
+}
 
 
 /* FUNCTION - int removeSong
@@ -107,7 +119,9 @@ int addSong(Song const &s);
    input parms -
    output parms -
 */
-int removeSong(Song const &s);
+int removeSong(Song const &s){
+    //call pop/destructor
+}
 
 
 /* FUNCTION - void shuffle
@@ -116,7 +130,9 @@ int removeSong(Song const &s);
    input parms -
    output parms -
 */
-void shuffle();
+void shuffle(){
+    //praise RNG gods
+}
 
 
 /* FUNCTION - void showSongList
@@ -125,7 +141,9 @@ void shuffle();
    input parms -
    output parms -
 */
-void showSongList();
+void showSongList(){
+
+}
 
 
 /* FUNCTION - void sortSongList
@@ -134,7 +152,9 @@ void showSongList();
    input parms -
    output parms -
 */
-void sortSongList();
+void sortSongList(){
+
+}
 
 
 /* FUNCTION - void clearMemory
@@ -142,7 +162,9 @@ void sortSongList();
    input parms -
    output parms -
 */
-void clearMemory();
+void clearMemory(){
+
+}
 
 
 /* FUNCTION - int getTotalMemory
@@ -151,7 +173,7 @@ void clearMemory();
    input parms -
    output parms -
 */
-int getTotalMemory() {
+UtPod::getTotalMemory() {
     return memSize;
 }
 

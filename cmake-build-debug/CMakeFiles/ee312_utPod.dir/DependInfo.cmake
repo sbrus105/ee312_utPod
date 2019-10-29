@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/song.cpp" "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj"
+  "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/Song.cpp" "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj"
+  "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/stack.cpp" "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/cmake-build-debug/CMakeFiles/ee312_utPod.dir/stack.cpp.obj"
   "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPodDriver.cpp" "C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/cmake-build-debug/CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

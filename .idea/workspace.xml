@@ -14,18 +14,20 @@
     <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ee312_utPod.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ee312_utPod.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/song.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/song.h" beforeDir="false" afterPath="$PROJECT_DIR$/song.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utPod.h" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utPodDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPodDriver.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,7 +89,9 @@
       <workItem from="1571764279558" duration="1860000" />
       <workItem from="1571805114150" duration="80000" />
       <workItem from="1571805997175" duration="489000" />
-      <workItem from="1571849642866" duration="1288000" />
+      <workItem from="1571849642866" duration="1523000" />
+      <workItem from="1572315517752" duration="851000" />
+      <workItem from="1572316944217" duration="2159000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -103,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571766059088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added constructors, might need further tweaking">
+      <created>1571850990765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571850990765</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setting up more files, song.cpp, etc." />
     <MESSAGE value="Further work on song.cpp and song.h" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further work on song.cpp and song.h" />
+    <MESSAGE value="Added constructors, might need further tweaking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added constructors, might need further tweaking" />
   </component>
 </project>

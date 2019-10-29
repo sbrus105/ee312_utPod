@@ -1,7 +1,9 @@
 TODO:
-	create Song.h
 	create own driver
 	create destructor
+
+	create stack push pop and init
+
 
 
 Create classes for UtPod and Song with appropriate header files. 
