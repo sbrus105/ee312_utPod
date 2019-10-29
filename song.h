@@ -21,9 +21,9 @@ class Song
         void setArtist(string a);
         void setSize(int s);
 
-        string getTitle() const;
-        string getArtist() const;
-        int getSize() const;
+//        string getTitle() const; ----Duplicate functions removed
+//        string getArtist() const;
+//        int getSize() const;
 
         ~Song();
 };

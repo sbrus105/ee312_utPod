@@ -10,11 +10,13 @@ using namespace std;
 //**********************************
 //Default Constructor
 //**********************************
-Song::Song(){
+/*
+Song::Song(){ //confirmed don't need
     artist = "Sam Torok";
     title = "Horns";
     size = 42;
 }
+*/
 
 //**********************************
 //Specialized Constructor
@@ -22,18 +24,13 @@ Song::Song(){
 Song::Song(string specialArtist,string specialTitle,int specialSize){
     artist = specialArtist;
     title = specialTitle;
-    if(specialSize<=0){
-        size = 42; //TODO: Is this the correct way to approach this  user  error?
-    }
-    else{
-        size = specialSize;
-    }
+    size = specialSize;
 }
 //--------------------------------------------
 //**********************************
 //Set Song object's title
 //**********************************
-void Song::setTitle(string t){  //TODO: Wtf
+void Song::setTitle(string t){  //TODO: Wtf, caused by duplicate Get functions in header file 
     title = t;
 }
 

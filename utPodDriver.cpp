@@ -107,7 +107,12 @@ UtPod::UtPod(int size){
  output parms -
 */
 int addSong(Song const &s){
-    //call push
+   if ((int remain = getRemainingMemory) <= s.size) {
+      return -1;
+   }
+   else {
+      push (s);
+   }
 }
 
 
@@ -119,8 +124,14 @@ int addSong(Song const &s){
    input parms -
    output parms -
 */
-int removeSong(Song const &s){
-    //call pop/destructor
+int removeSong(Song const &s) {
+    SongNode *temp = songs;
+    while ((temp -> next) != NULL) {
+       if ((temp -> s) == s) //TODO: a little confused on how this works
+          pop (&temp);
+       else
+          temp = temp -> next;
+   }
 }
 
 
@@ -184,4 +195,13 @@ UtPod::getTotalMemory() {
    input parms -
    output parms -
 */
-int getRemainingMemory();
+int getRemainingMemory() {
+   int remaining = 0;
+   int total = getTotalMemory();
+   SongNode *temp = songs;
+   while ((temp -> next) != NULL) {
+      remaining = remaining + (temp -> s).size
+      temp = temp -> next;
+   }
+   return total - remaining;
+}

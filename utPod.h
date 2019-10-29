@@ -4,6 +4,7 @@
 #ifndef UTPOD_H
 #define UTPOD_H
 #include "Song.h"
+#include "stack.h"
 
 //UtPod class declaration
 class UtPod
@@ -21,7 +22,7 @@ class UtPod
       };
       
       SongNode *songs;  //the head pointer
-      
+      makeStack (&songs);      
       int memSize;
    
    public:
