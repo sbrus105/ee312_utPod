@@ -63,8 +63,8 @@ bool Song::operator >(Song const &rhs) {
         return false;
 }
 
+
 bool Song::operator ==(Song const &rhs) {
    return (artist == rhs.artist && title == rhs.artist && size == rhs.size);
 }
 
-//TODO: might need to make an overloaded output???
