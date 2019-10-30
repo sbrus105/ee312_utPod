@@ -10,11 +10,13 @@ using namespace std;
 //**********************************
 //Default Constructor
 //**********************************
-Song::Song(){
+/*
+Song::Song(){ //confirmed don't need
     artist = "Sam Torok";
     title = "Horns";
     size = 42;
 }
+*/
 
 //**********************************
 //Specialized Constructor
@@ -22,18 +24,13 @@ Song::Song(){
 Song::Song(string specialArtist,string specialTitle,int specialSize){
     artist = specialArtist;
     title = specialTitle;
-    if(specialSize<=0){
-        size = 42; //TODO: Is this the correct way to approach this  user  error?
-    }
-    else{
-        size = specialSize;
-    }
+    size = specialSize;
 }
 //--------------------------------------------
 //**********************************
 //Set Song object's title
 //**********************************
-void Song::setTitle(string t){  //TODO: Wtf
+void Song::setTitle(string t){
     title = t;
 }
 
@@ -51,14 +48,23 @@ void Song::setSize(int s){
     size = s;
 }
 //--------------------------------------------
-string Song::getArtist() const{
-    return artist;
+bool Song::operator >(Song const &rhs) {
+    if (artist > rhs.artist)
+        return true;
+    else if (artist < rhs.artist)
+        return false;
+    else if (title > rhs.title)
+        return true;
+    else if (title < rhs.title)
+        return false;
+    else if (size > rhs.size)
+        return true;
+    else
+        return false;
 }
 
-string Song::getTitle() const{
-    return title;
+bool Song::operator ==(Song const &rhs) {
+   return (artist == rhs.artist && title == rhs.artist && size == rhs.size);
 }
 
-int Song::getSize() const{
-    return size;
-}
+//TODO: might need to make an overloaded output???

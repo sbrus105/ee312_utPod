@@ -107,7 +107,16 @@ UtPod::UtPod(int size){
  output parms -
 */
 int addSong(Song const &s){
-    //call push
+   if ((int remain = getRemainingMemory()) <= s.size) {
+      return -1;
+   }
+   else {
+      SongNode temp = songs;
+      temp.s = s;
+      temp.next = songs;
+      songs = temp;
+
+   }
 }
 
 
@@ -119,8 +128,37 @@ int addSong(Song const &s){
    input parms -
    output parms -
 */
-int removeSong(Song const &s){
-    //call pop/destructor
+int removeSong(Song const &s) {
+    SongNode *temp = songs;
+    SongNode *prev = NULL;
+    if (songs == NULL)
+       return -1;
+    else {
+       while ((temp -> next != NULL) && (temp -> s != s)) {
+          prev = temp;
+          temp = temp -> next;
+       }
+       if (prev == NULL) { //first element
+          songs = temp -> next;
+          delete temp;
+          return 0;
+       }
+       else if (temp != NULL) {
+          prev -> next = temp -> next;
+          delete temp;
+          return 0;
+       }
+    }
+
+/*
+    while ((temp -> next) != NULL) {
+       if ((temp -> s) == s) //TODO: a little confused on how this works
+          pop (&temp);
+       else
+          temp = temp -> next;
+   }
+*/
+
 }
 
 
@@ -138,11 +176,17 @@ void shuffle(){
 /* FUNCTION - void showSongList
  * prints the current list of songs in order from first to last to standard output
  * format - Title, Artist, size in MB (one song per line)
-   input parms -
+   input parms - head pointer
    output parms -
 */
-void showSongList(){
-
+void showSongList(SongNode *songs){
+    SongNode *temp = songs;
+    while(temp->next != NULL){
+        cout << "Title: " << (temp -> song.title) << "\n";
+        cout << "Artist: " << (temp -> song.artist) << "\n";
+        cout << "Size: " << (temp -> song.size) << "MB\n";
+        temp = temp -> next;
+    }
 }
 
 
@@ -153,17 +197,27 @@ void showSongList(){
    output parms -
 */
 void sortSongList(){
-
+    bool notSorted = false;
+    while(notSorted){
+        //bubble sort
+        //create two counters, compare one "largest" song with a second iterator. continue comparing
+        //until all comprisons turn up true
+    }
 }
 
 
 /* FUNCTION - void clearMemory
  * clears all the songs from memory
-   input parms -
+   input parms - Head pointer
    output parms -
 */
-void clearMemory(){
-
+void clearMemory( SongNode &songs){ //TODO: change this? -- yes, delete songs from memory
+   SongNode *temp = songs;
+   while (temp -> next != NULL) {
+      delete temp;
+      temp = temp -> next;
+   }
+   songs = NULL;
 }
 
 
@@ -184,4 +238,28 @@ UtPod::getTotalMemory() {
    input parms -
    output parms -
 */
-int getRemainingMemory();
+int getRemainingMemory() {
+   int remaining = 0;
+   int total = getTotalMemory();
+   SongNode *temp = songs;
+   while ((temp -> next) != NULL) {
+      remaining = remaining + (temp -> s).size
+      temp = temp -> next;
+   }
+   return total - remaining;
+}
+
+/* FUNCTION - int countSongs
+   returns the number of songs in the song list
+   input params -
+   output params - number of songs
+*/
+int countSongs () {
+   SongNode *temp = songs;
+   int numSongs = 0;
+   while (temp -> next != NULL) {
+      numSongs++;
+      temp = temp -> next;
+   }
+   return numSongs;
+}

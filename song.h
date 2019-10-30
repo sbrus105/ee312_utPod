@@ -14,16 +14,21 @@ class Song
     public:
         Song();
         Song(string title, string artist, int size);
-        string getTitle() const; {return title}
-        string getArtist() const; {return artist}
-        int getSize() const; {return size}
+        string getTitle() const
+            {return title;}
+        string getArtist() const
+            {return artist;}
+        int getSize() const
+            {return size;}
         void setTitle(string t);
         void setArtist(string a);
         void setSize(int s);
+        bool operator >(Song const &rhs);
+        bool operator ==(Song const &rhs);
 
-        string getTitle() const;
-        string getArtist() const;
-        int getSize() const;
+//        string getTitle() const; ----Duplicate functions removed
+//        string getArtist() const;
+//        int getSize() const;
 
         ~Song();
 };
