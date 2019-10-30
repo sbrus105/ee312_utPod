@@ -107,11 +107,17 @@ UtPod::UtPod(int size){
  output parms -
 */
 int addSong(Song const &s){
-   if ((int remain = getRemainingMemory) <= s.size) {
+
+   if ((int remain = getRemainingMemory()) <= s.size) {
       return -1;
    }
    else {
-      push (s);
+      SongNode temp = songs;
+      temp.s = s;
+      temp.next = songs;
+      songs = temp;
+
+
    }
 }
 
@@ -126,12 +132,38 @@ int addSong(Song const &s){
 */
 int removeSong(Song const &s) {
     SongNode *temp = songs;
+
+    SongNode *prev = NULL;
+    if (songs == NULL)
+       return -1;
+    else {
+       while ((temp -> next != NULL) && (temp -> s != s)) {
+          prev = temp;
+          temp = temp -> next;
+       }
+       if (prev == NULL) { //first element
+          songs = temp -> next;
+          delete temp;
+          return 0;
+       }
+       else if (temp != NULL) {
+          prev -> next = temp -> next;
+          delete temp;
+          return 0;
+       }
+    }
+
+/*
+
     while ((temp -> next) != NULL) {
        if ((temp -> s) == s) //TODO: a little confused on how this works
           pop (&temp);
        else
           temp = temp -> next;
    }
+
+*/
+
 }
 
 
@@ -153,10 +185,19 @@ void shuffle(){
    output parms -
 */
 void showSongList(SongNode *songs){
+
+    SongNode *temp = songs;
+    while(temp->next != NULL){
+        cout << "Title: " << (temp -> song.title) << "\n";
+        cout << "Artist: " << (temp -> song.artist) << "\n";
+        cout << "Size: " << (temp -> song.size) << "MB\n";
+        temp = temp -> next;
+
     while(songs->next != NULL){
         cout << "Title: " << (songs -> song.title) << "\n";
         cout << "Artist: " << (songs -> song.artist) << "\n";
         cout << "Size: " << (songs -> song.size) << "MB\n";
+
     }
 }
 
@@ -182,8 +223,18 @@ void sortSongList(){
    input parms - Head pointer
    output parms -
 */
+
+void clearMemory( SongNode &songs){ //TODO: change this? -- yes, delete songs from memory
+   SongNode *temp = songs;
+   while (temp -> next != NULL) {
+      delete temp;
+      temp = temp -> next;
+   }
+   songs = NULL;
+
 void clearMemory( SongNode &songs){ //TODO: change this?
     songs = NULL;
+
 }
 
 
@@ -214,3 +265,20 @@ int getRemainingMemory() {
    }
    return total - remaining;
 }
+
+
+/* FUNCTION - int countSongs
+   returns the number of songs in the song list
+   input params -
+   output params - number of songs
+*/
+int countSongs () {
+   SongNode *temp = songs;
+   int numSongs = 0;
+   while (temp -> next != NULL) {
+      numSongs++;
+      temp = temp -> next;
+   }
+   return numSongs;
+}
+

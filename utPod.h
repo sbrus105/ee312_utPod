@@ -22,7 +22,9 @@ class UtPod
       };
       
       SongNode *songs;  //the head pointer
-      makeStack (&songs);
+
+      songs = NULL;
+
       int memSize;
    
    public:
@@ -111,6 +113,8 @@ class UtPod
          output parms -
       */
       int getRemainingMemory();
+
+      int numSongs ();
 
 
       ~UtPod();

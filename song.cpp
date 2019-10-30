@@ -62,3 +62,9 @@ bool Song::operator >(Song const &rhs) {
     else
         return false;
 }
+
+
+bool Song::operator ==(Song const &rhs) {
+   return (artist == rhs.artist && title == rhs.artist && size == rhs.size);
+}
+
