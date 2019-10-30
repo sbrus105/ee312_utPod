@@ -30,7 +30,7 @@ Song::Song(string specialArtist,string specialTitle,int specialSize){
 //**********************************
 //Set Song object's title
 //**********************************
-void Song::setTitle(string t){  //TODO: Wtf, caused by duplicate Get functions in header file 
+void Song::setTitle(string t){
     title = t;
 }
 
@@ -48,14 +48,17 @@ void Song::setSize(int s){
     size = s;
 }
 //--------------------------------------------
-string Song::getArtist() const{
-    return artist;
-}
-
-string Song::getTitle() const{
-    return title;
-}
-
-int Song::getSize() const{
-    return size;
+bool Song::operator >(Song const &rhs) {
+    if (artist > rhs.artist)
+        return true;
+    else if (artist < rhs.artist)
+        return false;
+    else if (title > rhs.title)
+        return true;
+    else if (title < rhs.title)
+        return false;
+    else if (size > rhs.size)
+        return true;
+    else
+        return false;
 }

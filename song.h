@@ -23,6 +23,8 @@ class Song
         void setTitle(string t);
         void setArtist(string a);
         void setSize(int s);
+        bool operator >(Song const &rhs);
+        bool operator ==(Song const &rhs);
 
 //        string getTitle() const; ----Duplicate functions removed
 //        string getArtist() const;
