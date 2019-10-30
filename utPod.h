@@ -21,9 +21,7 @@ class UtPod
          SongNode *next;
       };
       
-      SongNode *songs;  //the head pointer
-
-      songs = NULL;
+      SongNode *songs = NULL; //the head pointer
 
       int memSize;
    
@@ -101,10 +99,7 @@ class UtPod
          input parms -
          output parms -
          */
-      int getTotalMemory() {
-         return memSize;
-      }
-
+      int getTotalMemory();
 
 
       /* FUNCTION - int getRemainingMemory
