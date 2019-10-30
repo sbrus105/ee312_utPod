@@ -22,7 +22,7 @@ class UtPod
       };
       
       SongNode *songs;  //the head pointer
-      makeStack (&songs);      
+      makeStack (&songs);
       int memSize;
    
    public:

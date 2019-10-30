@@ -149,11 +149,15 @@ void shuffle(){
 /* FUNCTION - void showSongList
  * prints the current list of songs in order from first to last to standard output
  * format - Title, Artist, size in MB (one song per line)
-   input parms -
+   input parms - head pointer
    output parms -
 */
-void showSongList(){
-
+void showSongList(SongNode *songs){
+    while(songs->next != NULL){
+        cout << "Title: " << (songs -> song.title) << "\n";
+        cout << "Artist: " << (songs -> song.artist) << "\n";
+        cout << "Size: " << (songs -> song.size) << "MB\n";
+    }
 }
 
 
@@ -164,17 +168,22 @@ void showSongList(){
    output parms -
 */
 void sortSongList(){
-
+    bool notSorted = false;
+    while(notSorted){
+        //bubble sort
+        //create two counters, compare one "largest" song with a second iterator. continue comparing
+        //until all comprisons turn up true
+    }
 }
 
 
 /* FUNCTION - void clearMemory
  * clears all the songs from memory
-   input parms -
+   input parms - Head pointer
    output parms -
 */
-void clearMemory(){
-
+void clearMemory( SongNode &songs){ //TODO: change this?
+    songs = NULL;
 }
 
 
