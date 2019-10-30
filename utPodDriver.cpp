@@ -14,7 +14,7 @@ You will want to do more complete testing.
 #include <iostream>
 #include "song.h"
 #include "utPod.h"
-#include "stack.h"
+#include <string>
 
 using namespace std;
 
@@ -107,16 +107,16 @@ UtPod::UtPod(int size){
  output parms -
 */
 int UtPod::addSong(Song const &s){
-
    int remain = getRemainingMemory();
    if (remain <= s.getSize()) {
       return -1;
    }
    else {
-      SongNode *temp = songs;
+      SongNode *temp = new SongNode;
       temp->s = s;
       temp->next = songs;
       songs = temp;
+      return 0;
    }
 }
 
@@ -150,19 +150,8 @@ int UtPod::removeSong(Song const &s) {
           delete temp;
           return 0;
        }
+       return -1;
     }
-
-/*
-
-    while ((temp -> next) != NULL) {
-       if ((temp -> s) == s) //TODO: a little confused on how this works
-          pop (&temp);
-       else
-          temp = temp -> next;
-   }
-
-*/
-
 }
 
 
@@ -199,6 +188,7 @@ void UtPod::showSongList() {
 
         }
     }
+}
 
 /* FUNCTION - void sortSongList
  *  sorts the songs in ascending order
@@ -231,12 +221,7 @@ void UtPod::clearMemory(){ //TODO: change this? -- yes, delete songs from memory
             temp = temp->next;
         }
         songs = NULL;
-
-        void clearMemory(SongNode &songs) { //TODO: change this?
-            songs = NULL;
-
-        }
-    }
+}
 
 
 /* FUNCTION - int getTotalMemory
@@ -249,23 +234,21 @@ int UtPod::getTotalMemory(){
     return memSize;
 }
 
-
-
 /* FUNCTION - int getRemainingMemory
    returns the amount of memory available for adding new songs
    input parms -
    output parms -
 */
-        int getRemainingMemory() {
-            int remaining = 0;
-            int total = getTotalMemory();
-            SongNode *temp = songs;
-            while ((temp->next) != NULL) {
-                remaining = remaining + (temp->s).size
-                temp = temp->next;
-            }
-            return total - remaining;
-        }
+int UtPod::getRemainingMemory() {
+    int remaining = 0;
+    int total = getTotalMemory();
+    SongNode *temp = songs;
+    while ((temp->next) != NULL) {
+        remaining = remaining + (temp->s).getSize();
+        temp = temp->next;
+    }
+    return total - remaining;
+}
 
 
 /* FUNCTION - int countSongs
@@ -273,14 +256,21 @@ int UtPod::getTotalMemory(){
    input params -
    output params - number of songs
 */
-        int countSongs() {
-            SongNode *temp = songs;
-            int numSongs = 0;
-            while (temp->next != NULL) {
-                numSongs++;
-                temp = temp->next;
-            }
-            return numSongs;
-        }
+int UtPod::numSongs() {
+    SongNode *temp = songs;
+    int numSongs = 0;
+    while (temp->next != NULL) {
+        numSongs++;
+        temp = temp->next;
     }
+    return numSongs;
+}
+
+/* FUNCTION - destructor
+   calls clear memory, destructs the UtPod
+   input params -
+   output params -
+*/
+UtPod::~UtPod() {
+    clearMemory();
 }

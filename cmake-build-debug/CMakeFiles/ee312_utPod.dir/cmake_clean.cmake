@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ee312_utPod.dir/Song.cpp.obj"
-  "CMakeFiles/ee312_utPod.dir/stack.cpp.obj"
+  "CMakeFiles/ee312_utPod.dir/song.cpp.obj"
   "CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.obj"
   "ee312_utPod.exe"
   "ee312_utPod.exe.manifest"

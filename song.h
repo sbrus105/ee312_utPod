@@ -2,6 +2,8 @@
 //Sam Brus and Collin Torok
 
 using namespace std;
+#ifndef SONG_H
+#define SONG_H
 #include <cstdlib>
 #include <iostream>
 
@@ -25,11 +27,11 @@ class Song
         void setSize(int s);
         bool operator >(Song const &rhs);
         bool operator ==(Song const &rhs);
+        bool operator !=(Song const &rhs);
 
 //        string getTitle() const; ----Duplicate functions removed
 //        string getArtist() const;
 //        int getSize() const;
-
-        ~Song();
 };
 
+#endif

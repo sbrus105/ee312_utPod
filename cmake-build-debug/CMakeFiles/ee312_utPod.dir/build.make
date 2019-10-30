@@ -70,51 +70,35 @@ CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\utPodDriver.cpp" -o CMakeFiles\ee312_utPod.dir\utPodDriver.cpp.s
 
-CMakeFiles/ee312_utPod.dir/stack.cpp.obj: CMakeFiles/ee312_utPod.dir/flags.make
-CMakeFiles/ee312_utPod.dir/stack.cpp.obj: CMakeFiles/ee312_utPod.dir/includes_CXX.rsp
-CMakeFiles/ee312_utPod.dir/stack.cpp.obj: ../stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ee312_utPod.dir/stack.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ee312_utPod.dir\stack.cpp.obj -c "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\stack.cpp"
+CMakeFiles/ee312_utPod.dir/song.cpp.obj: CMakeFiles/ee312_utPod.dir/flags.make
+CMakeFiles/ee312_utPod.dir/song.cpp.obj: CMakeFiles/ee312_utPod.dir/includes_CXX.rsp
+CMakeFiles/ee312_utPod.dir/song.cpp.obj: ../song.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ee312_utPod.dir/song.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ee312_utPod.dir\song.cpp.obj -c "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\song.cpp"
 
-CMakeFiles/ee312_utPod.dir/stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee312_utPod.dir/stack.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\stack.cpp" > CMakeFiles\ee312_utPod.dir\stack.cpp.i
+CMakeFiles/ee312_utPod.dir/song.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee312_utPod.dir/song.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\song.cpp" > CMakeFiles\ee312_utPod.dir\song.cpp.i
 
-CMakeFiles/ee312_utPod.dir/stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee312_utPod.dir/stack.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\stack.cpp" -o CMakeFiles\ee312_utPod.dir\stack.cpp.s
-
-CMakeFiles/ee312_utPod.dir/Song.cpp.obj: CMakeFiles/ee312_utPod.dir/flags.make
-CMakeFiles/ee312_utPod.dir/Song.cpp.obj: CMakeFiles/ee312_utPod.dir/includes_CXX.rsp
-CMakeFiles/ee312_utPod.dir/Song.cpp.obj: ../Song.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ee312_utPod.dir/Song.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ee312_utPod.dir\Song.cpp.obj -c "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\Song.cpp"
-
-CMakeFiles/ee312_utPod.dir/Song.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee312_utPod.dir/Song.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\Song.cpp" > CMakeFiles\ee312_utPod.dir\Song.cpp.i
-
-CMakeFiles/ee312_utPod.dir/Song.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee312_utPod.dir/Song.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\Song.cpp" -o CMakeFiles\ee312_utPod.dir\Song.cpp.s
+CMakeFiles/ee312_utPod.dir/song.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee312_utPod.dir/song.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\song.cpp" -o CMakeFiles\ee312_utPod.dir\song.cpp.s
 
 # Object files for target ee312_utPod
 ee312_utPod_OBJECTS = \
 "CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.obj" \
-"CMakeFiles/ee312_utPod.dir/stack.cpp.obj" \
-"CMakeFiles/ee312_utPod.dir/Song.cpp.obj"
+"CMakeFiles/ee312_utPod.dir/song.cpp.obj"
 
 # External object files for target ee312_utPod
 ee312_utPod_EXTERNAL_OBJECTS =
 
 ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.obj
-ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/stack.cpp.obj
-ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/Song.cpp.obj
+ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/song.cpp.obj
 ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/build.make
 ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/linklibs.rsp
 ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/objects1.rsp
 ee312_utPod.exe: CMakeFiles/ee312_utPod.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ee312_utPod.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\samue\OneDrive\UT 2019-2020\EE 312\utPod\ee312_utPod\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ee312_utPod.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ee312_utPod.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

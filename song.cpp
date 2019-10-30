@@ -4,19 +4,19 @@
 #include <cstdlib>
 #include <iostream>
 #include "song.h"
-
+#include <string>
 using namespace std;
 
 //**********************************
 //Default Constructor
 //**********************************
-/*
+
 Song::Song(){ //confirmed don't need
     artist = "Sam Torok";
     title = "Horns";
     size = 42;
 }
-*/
+
 
 //**********************************
 //Specialized Constructor
@@ -66,5 +66,9 @@ bool Song::operator >(Song const &rhs) {
 
 bool Song::operator ==(Song const &rhs) {
    return (artist == rhs.artist && title == rhs.artist && size == rhs.size);
+}
+
+bool Song::operator !=(Song const &rhs) {
+    return (artist != rhs.artist || title != rhs.artist || size != rhs.size);
 }
 

@@ -122,59 +122,32 @@ ee312_utPod/fast:
 	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/build
 .PHONY : ee312_utPod/fast
 
-Song.obj: Song.cpp.obj
+song.obj: song.cpp.obj
 
-.PHONY : Song.obj
-
-# target to build an object file
-Song.cpp.obj:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.obj
-.PHONY : Song.cpp.obj
-
-Song.i: Song.cpp.i
-
-.PHONY : Song.i
-
-# target to preprocess a source file
-Song.cpp.i:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.i
-.PHONY : Song.cpp.i
-
-Song.s: Song.cpp.s
-
-.PHONY : Song.s
-
-# target to generate assembly for a file
-Song.cpp.s:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.s
-.PHONY : Song.cpp.s
-
-stack.obj: stack.cpp.obj
-
-.PHONY : stack.obj
+.PHONY : song.obj
 
 # target to build an object file
-stack.cpp.obj:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.obj
-.PHONY : stack.cpp.obj
+song.cpp.obj:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.obj
+.PHONY : song.cpp.obj
 
-stack.i: stack.cpp.i
+song.i: song.cpp.i
 
-.PHONY : stack.i
+.PHONY : song.i
 
 # target to preprocess a source file
-stack.cpp.i:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.i
-.PHONY : stack.cpp.i
+song.cpp.i:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.i
+.PHONY : song.cpp.i
 
-stack.s: stack.cpp.s
+song.s: song.cpp.s
 
-.PHONY : stack.s
+.PHONY : song.s
 
 # target to generate assembly for a file
-stack.cpp.s:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/stack.cpp.s
-.PHONY : stack.cpp.s
+song.cpp.s:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.s
+.PHONY : song.cpp.s
 
 utPodDriver.obj: utPodDriver.cpp.obj
 
@@ -212,12 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... ee312_utPod
 	@echo ... rebuild_cache
-	@echo ... Song.obj
-	@echo ... Song.i
-	@echo ... Song.s
-	@echo ... stack.obj
-	@echo ... stack.i
-	@echo ... stack.s
+	@echo ... song.obj
+	@echo ... song.i
+	@echo ... song.s
 	@echo ... utPodDriver.obj
 	@echo ... utPodDriver.i
 	@echo ... utPodDriver.s
