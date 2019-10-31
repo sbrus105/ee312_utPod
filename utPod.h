@@ -21,11 +21,10 @@ class UtPod
       };
       
       SongNode *songs; //the head pointer
-
-     // songs = NULL;
-
       int memSize;
-   
+      int numSongs ();
+      void swap (SongNode *p1, SongNode *p2);
+         
    public:
       //Default constructor
       //set the memory size to MAX_MEMORY
@@ -110,10 +109,6 @@ class UtPod
       */
 
       int getRemainingMemory();
-      
-      private
-
-      int numSongs ();
 
       ~UtPod();
 };
