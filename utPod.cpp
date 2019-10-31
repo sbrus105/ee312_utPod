@@ -12,6 +12,7 @@ using namespace std;
 //Default constructor
 //set the memory size to MAX_MEMORY
 UtPod::UtPod(){
+    unsigned int currentTime = (unsigned)time(0);
     memSize = MAX_MEMORY;
     songs = NULL;
 }
@@ -28,6 +29,7 @@ UtPod::UtPod(int size){
         memSize = size;
     }
     songs = NULL;
+    unsigned int currentTime = (unsigned)time(0);
 }
 
 
@@ -69,7 +71,7 @@ int UtPod::removeSong(Song const &s) {
     if (songs == NULL)
        return -1;
     else {
-       while ((temp -> next != NULL) && (temp -> s != s)) {
+       while ((temp != NULL) && (temp -> s != s)) {
           prev = temp;
           temp = temp -> next;
        }
@@ -94,11 +96,37 @@ int UtPod::removeSong(Song const &s) {
    input parms -
    output parms -
 */
-void shuffle(){
-    //praise RNG gods
+void UtPod::shuffle(){
+   int numShuffle;
+   int swap1;
+   int swap2;
+   srand(currentTime);
+   numShuffle = 2 * numSongs();
+   for (int i =0; i < numShuffle; i++) {
+      swap1 = (rand() % numSongs());
+      swap2 = (rand() % numSongs());
+      SongNode *p1 = songs;
+      SongNode *p2 = songs;
+      for (int i = 0; i < swap1; i++)
+         p1 = p1 -> next;
+      for (int i = 0; i < swap2; i++)
+         p2 = p2 -> next;
+      swap (p1, p2);
+   }
 }
 
+/* FUNCTION - void swap
+   swaps the song contents of 2 inputs
+   input params - pointer to song 1, pointer to song 2
+   output params - 
+*/
 
+void UtPod::swap (SongNode *p1, SongNode *p2) {
+   SongNode *temp = p2;
+//   temp.s = p2 -> s;
+   p2 -> s = p1 -> s;
+   p1 -> s = temp -> s;
+}
 /* FUNCTION - void showSongList
  * prints the current list of songs in order from first to last to standard output
  * format - Title, Artist, size in MB (one song per line)
@@ -108,18 +136,19 @@ void shuffle(){
 void UtPod::showSongList() {
 
     SongNode *temp = songs;
-    while (temp->next != NULL) {
+    while (temp != NULL) {
         cout << "Title: " << temp->s.getTitle() << "\n";
         cout << "Artist: " << temp->s.getArtist() << "\n";
         cout << "Size: " << temp->s.getSize() << "MB\n";
         temp = temp->next;
-
+/*
         while (songs->next != NULL) {
             cout << "Title: " << (songs->s.getTitle)() << "\n";
             cout << "Artist: " << (songs->s.getArtist()) << "\n";
             cout << "Size: " << (songs->s.getSize()) << "MB\n";
 
         }
+*/
     }
 }
 
@@ -149,7 +178,7 @@ void UtPod::showSongList() {
 
 void UtPod::clearMemory(){ //TODO: change this? -- yes, delete songs from memory
         SongNode *temp = songs;
-        while (temp->next != NULL) {
+        while (temp != NULL) {
             delete temp;
             temp = temp->next;
         }
@@ -172,15 +201,17 @@ int UtPod::getTotalMemory(){
    input parms -
    output parms -
 */
+
 int UtPod::getRemainingMemory() {
     int remaining = 0;
     int total = getTotalMemory();
     SongNode *temp = songs;
-    while ((temp->next) != NULL) {
+    while ((temp) != NULL) {
         remaining = remaining + (temp->s).getSize();
         temp = temp->next;
     }
     return total - remaining;
+   return getTotalMemory();
 }
 
 
@@ -192,7 +223,7 @@ int UtPod::getRemainingMemory() {
 int UtPod::numSongs() {
     SongNode *temp = songs;
     int numSongs = 0;
-    while (temp->next != NULL) {
+    while (temp != NULL) {
         numSongs++;
         temp = temp->next;
     }

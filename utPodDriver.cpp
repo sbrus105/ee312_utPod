@@ -46,8 +46,10 @@ int main(int argc, char *argv[])
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
     
+    t.shuffle();
+
     t.showSongList();
-    
+
     result = t.removeSong(s2);
     cout << "delete result = " << result << endl;
   
