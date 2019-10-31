@@ -12,7 +12,7 @@ using namespace std;
 //Default constructor
 //set the memory size to MAX_MEMORY
 UtPod::UtPod(){
-    unsigned int currentTime = (unsigned)time(0);
+    currentTime = (unsigned)time(0);
     memSize = MAX_MEMORY;
     songs = NULL;
 }
@@ -29,7 +29,7 @@ UtPod::UtPod(int size){
         memSize = size;
     }
     songs = NULL;
-    unsigned int currentTime = (unsigned)time(0);
+    currentTime = (unsigned)time(0);
 }
 
 
@@ -122,10 +122,11 @@ void UtPod::shuffle(){
 */
 
 void UtPod::swap (SongNode *p1, SongNode *p2) {
-   SongNode *temp = p2;
+   SongNode temp;
+   temp.s = p2 -> s;
 //   temp.s = p2 -> s;
    p2 -> s = p1 -> s;
-   p1 -> s = temp -> s;
+   p1 -> s = temp.s;
 }
 /* FUNCTION - void showSongList
  * prints the current list of songs in order from first to last to standard output
@@ -139,7 +140,7 @@ void UtPod::showSongList() {
     while (temp != NULL) {
         cout << "Title: " << temp->s.getTitle() << "\n";
         cout << "Artist: " << temp->s.getArtist() << "\n";
-        cout << "Size: " << temp->s.getSize() << "MB\n";
+        cout << "Size: " << temp->s.getSize() << "MB\n\n";
         temp = temp->next;
 /*
         while (songs->next != NULL) {
@@ -211,7 +212,6 @@ int UtPod::getRemainingMemory() {
         temp = temp->next;
     }
     return total - remaining;
-   return getTotalMemory();
 }
 
 

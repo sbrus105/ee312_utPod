@@ -50,6 +50,10 @@ int main(int argc, char *argv[])
 
     t.showSongList();
 
+    t.shuffle();
+
+    t.showSongList();
+
     result = t.removeSong(s2);
     cout << "delete result = " << result << endl;
   
