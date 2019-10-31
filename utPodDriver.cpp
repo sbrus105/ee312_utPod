@@ -95,6 +95,7 @@ UtPod::UtPod(int size){
     else{
         memSize = size;
     }
+    songs = NULL;
 }
 
 
@@ -109,14 +110,14 @@ UtPod::UtPod(int size){
 int UtPod::addSong(Song const &s){
    int remain = getRemainingMemory();
    if (remain <= s.getSize()) {
-      return -1;
+      return NO_MEMORY;
    }
    else {
       SongNode *temp = new SongNode;
       temp->s = s;
       temp->next = songs;
       songs = temp;
-      return 0;
+      return SUCCESS;
    }
 }
 

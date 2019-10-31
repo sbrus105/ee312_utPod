@@ -22,7 +22,7 @@ class UtPod
       
       SongNode *songs; //the head pointer
 
-      songs = NULL;
+     // songs = NULL;
 
       int memSize;
    
@@ -108,7 +108,10 @@ class UtPod
          input parms -
          output parms -
       */
+
       int getRemainingMemory();
+      
+      private
 
       int numSongs ();
 
