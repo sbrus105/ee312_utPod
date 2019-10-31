@@ -14,7 +14,7 @@
     <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPodDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPodDriver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utPod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <workItem from="1572475412560" duration="4639000" />
       <workItem from="1572495182965" duration="1119000" />
       <workItem from="1572528931201" duration="960000" />
-      <workItem from="1572539271623" duration="2848000" />
+      <workItem from="1572539271623" duration="4857000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572541742455</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="seg fault in sort?">
+      <created>1572542159072</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572542159072</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +202,7 @@
     <MESSAGE value="debugging" />
     <MESSAGE value="This is an OH level problem, utPod.h NULL pointer defeats me again." />
     <MESSAGE value="first try at sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="first try at sort" />
+    <MESSAGE value="seg fault in sort?" />
+    <option name="LAST_COMMIT_MESSAGE" value="seg fault in sort?" />
   </component>
 </project>
