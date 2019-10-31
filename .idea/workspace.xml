@@ -87,7 +87,7 @@
       <workItem from="1572475412560" duration="4639000" />
       <workItem from="1572495182965" duration="1119000" />
       <workItem from="1572528931201" duration="960000" />
-      <workItem from="1572539271623" duration="4857000" />
+      <workItem from="1572539271623" duration="7686000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572542159072</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="seg fault in sort?">
+      <created>1572544218614</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572544218614</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

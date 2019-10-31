@@ -162,10 +162,20 @@ void UtPod::sortSongList() {
         temp = temp->next;
     }
     temp = songs->next; //reset back to beginning
-    while (notSorted) {
-       notSorted = false;
-       for(largest = songs; temp != NULL; temp = temp -> next){
-           if((largest->s)>(temp->s)){
+    notSorted = false;
+           for(int i = 0;i<numSongs-1;i++){
+               largest = songs;
+               temp = songs ->next;
+               for(int p = 0; p < numSongs - i -1;p++){
+                   if((largest->s)>(temp->s)){
+                       swap(largest,temp);
+                   }//end of if
+                   largest = largest->next;
+                   temp = temp ->next;
+               }
+           }
+
+/*           if((largest->s)>(temp->s)){
                swap(largest,temp);
                notSorted = true;
            }//end of if
@@ -174,10 +184,8 @@ void UtPod::sortSongList() {
                tempTwo->s = largest ->s;
                (largest->s)=(temp->s);
                temp -> s = tempTwo -> s;
-
            }
-        }//end of for
-    }//end of while
+*/
 }//end of sortSongList
 
 
