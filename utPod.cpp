@@ -6,6 +6,7 @@
 #include "song.h"
 #include "utPod.h"
 #include <string>
+#include <ctime>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ UtPod::UtPod(){
     memSize = MAX_MEMORY;
     songs = NULL;
 }
+
 
 //Constructor with size parameter
 //The user of the class will pass in a size.
@@ -66,7 +68,6 @@ int UtPod::addSong(Song const &s){
 */
 int UtPod::removeSong(Song const &s) {
     SongNode *temp = songs;
-
     SongNode *prev = NULL;
     if (songs == NULL)
        return -1;
@@ -120,14 +121,14 @@ void UtPod::shuffle(){
    input params - pointer to song 1, pointer to song 2
    output params - 
 */
-
 void UtPod::swap (SongNode *p1, SongNode *p2) {
    SongNode temp;
    temp.s = p2 -> s;
-//   temp.s = p2 -> s;
    p2 -> s = p1 -> s;
    p1 -> s = temp.s;
 }
+
+
 /* FUNCTION - void showSongList
  * prints the current list of songs in order from first to last to standard output
  * format - Title, Artist, size in MB (one song per line)
@@ -135,21 +136,12 @@ void UtPod::swap (SongNode *p1, SongNode *p2) {
    output parms -
 */
 void UtPod::showSongList() {
-
     SongNode *temp = songs;
     while (temp != NULL) {
         cout << "Title: " << temp->s.getTitle() << "\n";
         cout << "Artist: " << temp->s.getArtist() << "\n";
         cout << "Size: " << temp->s.getSize() << "MB\n\n";
         temp = temp->next;
-/*
-        while (songs->next != NULL) {
-            cout << "Title: " << (songs->s.getTitle)() << "\n";
-            cout << "Artist: " << (songs->s.getArtist()) << "\n";
-            cout << "Size: " << (songs->s.getSize()) << "MB\n";
-
-        }
-*/
     }
 }
 
@@ -159,16 +151,34 @@ void UtPod::showSongList() {
    input parms -
    output parms -
 */
-    void UtPod::sortSongList() {
-        bool notSorted = false;
-        while (notSorted) {
+void UtPod::sortSongList() {
+    bool notSorted = true;
+    SongNode *largest = songs;
 
-            //bubble sort
-            //create two counters, compare one "largest" song with a second iterator. continue comparing
-            //until all comprisons turn up true
+    int numSongs = 0;
+    SongNode *temp = songs;
+    while (temp != NULL) {      //get number of songs in the LL
+        numSongs++;
+        temp = temp->next;
+    }
+    temp = songs->next; //reset back to beginning
+    while (notSorted) {
+       notSorted = false;
+       for(largest = songs; temp != NULL; temp = temp -> next){
+           if((largest->s)>(temp->s)){
+               swap(largest,temp);
+               notSorted = true;
+           }//end of if
+           else if((temp->s)>(largest->s)){
+               SongNode *tempTwo = songs;
+               tempTwo->s = largest ->s;
+               (largest->s)=(temp->s);
+               temp -> s = tempTwo -> s;
 
-        }//end of while
-    }//end of sortSongList
+           }
+        }//end of for
+    }//end of while
+}//end of sortSongList
 
 
 /* FUNCTION - void clearMemory
@@ -176,8 +186,7 @@ void UtPod::showSongList() {
    input parms - Head pointer
    output parms -
 */
-
-void UtPod::clearMemory(){ //TODO: change this? -- yes, delete songs from memory
+void UtPod::clearMemory(){
         SongNode *temp = songs;
         while (temp != NULL) {
             delete temp;
@@ -197,12 +206,12 @@ int UtPod::getTotalMemory(){
     return memSize;
 }
 
+
 /* FUNCTION - int getRemainingMemory
    returns the amount of memory available for adding new songs
    input parms -
    output parms -
 */
-
 int UtPod::getRemainingMemory() {
     int remaining = 0;
     int total = getTotalMemory();
@@ -229,6 +238,7 @@ int UtPod::numSongs() {
     }
     return numSongs;
 }
+
 
 /* FUNCTION - destructor
    calls clear memory, destructs the UtPod
