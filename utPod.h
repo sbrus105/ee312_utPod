@@ -21,10 +21,8 @@ class UtPod
       };
       
       SongNode *songs; //the head pointer
-
-     // songs = NULL;
-
       int memSize;
+      int numSongs ();
    
    public:
       //Default constructor
@@ -110,10 +108,6 @@ class UtPod
       */
 
       int getRemainingMemory();
-      
-      private
-
-      int numSongs ();
 
       ~UtPod();
 };

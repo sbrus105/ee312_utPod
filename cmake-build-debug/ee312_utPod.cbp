@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/song.h">
 			<Option target="ee312_utPod"/>
 		</Unit>
+		<Unit filename="C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPod.cpp">
+			<Option target="ee312_utPod"/>
+		</Unit>
 		<Unit filename="C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPod.h">
 			<Option target="ee312_utPod"/>
 		</Unit>

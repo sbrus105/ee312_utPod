@@ -9,4 +9,5 @@ add_executable(ee312_utPod
         Song.h
         utPod.h
         utPodDriver.cpp
+        utPod.cpp
         Song.cpp)
