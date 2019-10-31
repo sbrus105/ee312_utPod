@@ -24,6 +24,7 @@ class UtPod
       int memSize;
       int numSongs ();
       void swap (SongNode *p1, SongNode *p2);
+      unsigned int currentTime;
          
    public:
       //Default constructor
