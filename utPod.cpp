@@ -122,10 +122,11 @@ void UtPod::shuffle(){
    output params - 
 */
 void UtPod::swap (SongNode *p1, SongNode *p2) {
-   SongNode *temp = p2;
+   SongNode temp;
+   temp.s = p2 -> s;
 //   temp.s = p2 -> s;
    p2 -> s = p1 -> s;
-   p1 -> s = temp -> s;
+   p1 -> s = temp.s;
 }
 
 
