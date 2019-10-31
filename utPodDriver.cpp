@@ -45,13 +45,17 @@ int main(int argc, char *argv[])
     Song s5("Beatles", "Hey Jude5", 241);
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
-    
-    t.shuffle();
 
+    cout << "Shuffling...\n" << endl;
+    t.shuffle();
     t.showSongList();
 
+    cout << "Shuffling again ...\n" << endl;
     t.shuffle();
+    t.showSongList();
 
+    cout << "Sorting...\n" << endl;
+    t.sortSongList();
     t.showSongList();
 
     result = t.removeSong(s2);
