@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" afterDir="false" />
+    <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="working">
       <change beforePath="$PROJECT_DIR$/utPod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1572475412560" duration="4639000" />
       <workItem from="1572495182965" duration="1119000" />
       <workItem from="1572528931201" duration="960000" />
-      <workItem from="1572539271623" duration="7686000" />
+      <workItem from="1572539271623" duration="7737000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -180,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572544218614</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="seg fault in sort?">
+      <created>1572547011767</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572547011767</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
