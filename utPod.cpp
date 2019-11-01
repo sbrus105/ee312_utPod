@@ -77,31 +77,26 @@ int UtPod::removeSong(Song const &s) {
        while(temp != NULL) {// || temp -> s == s) { //get to location of song   && (temp -> s != s))
           
           if((temp -> s) == s) {
-             p = temp;
-             prev = temp;
-             temp = temp -> next;
+              if (prev == NULL) { //first element
+                  songs = temp -> next; //move header
+                  delete temp;
+                  return 0;
+              }
+              else if (temp != NULL) {
+                  prev -> next = temp -> next;  //skip over the deleted song
+                  delete temp;
+                  return 0;
+              }
           }
-
           else {
           prev = temp;
           temp = temp -> next;
           }
-       }
-       temp = p;
-       if (prev == NULL) { //first element
-          songs = temp -> next; //move header
-          delete temp;
-          return 0;
-       }
-       else if (temp != NULL) {
-          prev -> next = temp -> next;  //skip over the deleted song
-
-          delete temp;
-          return 0;
-       }
-       return -1;
-    }
-}
+       }//end of while
+    }//end of first else
+    cout << "Reached bad code spot"<<endl;
+    return -1;
+}//end of removeSong
 
 
 /* FUNCTION - void shuffle

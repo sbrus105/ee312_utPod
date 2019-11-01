@@ -13,8 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utPod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPodDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPodDriver.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +92,9 @@
       <workItem from="1572495182965" duration="1119000" />
       <workItem from="1572528931201" duration="960000" />
       <workItem from="1572539271623" duration="7823000" />
-      <workItem from="1572556381206" duration="1864000" />
+      <workItem from="1572556381206" duration="1956000" />
+      <workItem from="1572626300888" duration="128000" />
+      <workItem from="1572626525164" duration="2725000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -195,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572547060036</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="removesong is not working, comparison between temp -&gt; s and the parameter 's' is reading false">
+      <created>1572558316958</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572558316958</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +239,8 @@
     <MESSAGE value="first try at sort" />
     <MESSAGE value="seg fault in sort?" />
     <MESSAGE value="working" />
-    <option name="LAST_COMMIT_MESSAGE" value="working" />
+    <MESSAGE value="removesong is not working, comparison between temp -&gt; s and the parameter 's' is reading false" />
+    <option name="LAST_COMMIT_MESSAGE" value="removesong is not working, comparison between temp -&gt; s and the parameter 's' is reading false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,18 +248,14 @@
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/utPod.cpp</url>
           <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/utPodDriver.cpp</url>
-          <line>65</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="s2" language="ObjectiveC" />
+        <watch expression="this-&gt;songs-&gt;next-&gt;next-&gt;next" />
       </configuration>
     </watches-manager>
   </component>
