@@ -65,10 +65,10 @@ bool Song::operator >(Song const &rhs) {
 
 
 bool Song::operator ==(Song const &rhs) {
-   return (artist == rhs.artist && title == rhs.artist && size == rhs.size);
+   return (artist == rhs.artist && title == rhs.title && size == rhs.size);
 }
 
 bool Song::operator !=(Song const &rhs) {
-    return (artist != rhs.artist || title != rhs.artist || size != rhs.size);
+    return (artist != rhs.artist || title != rhs.title || size != rhs.size);
 }
 

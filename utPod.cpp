@@ -70,16 +70,22 @@ int UtPod::addSong(Song const &s){
 int UtPod::removeSong(Song const &s) {
     SongNode *temp = songs;
     SongNode *prev = NULL;
+    SongNode *p;
     if (songs == NULL)
        return -1;
     else {
-       while(temp != NULL){ //get to location of song   && (temp -> s != s))
-          if((temp -> s == s)){
-              break;
+       while(temp != NULL || temp -> s != s) { //get to location of song   && (temp -> s != s))
+/*          
+          if((temp -> s) == s) {
+             p = temp;
           }
+*/
+//          else {
           prev = temp;
           temp = temp -> next;
+//          }
        }
+//       temp = p;
        if (prev == NULL) { //first element
           songs = temp -> next; //move header
           delete temp;
