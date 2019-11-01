@@ -74,18 +74,20 @@ int UtPod::removeSong(Song const &s) {
     if (songs == NULL)
        return -1;
     else {
-       while(temp != NULL || temp -> s != s) { //get to location of song   && (temp -> s != s))
-/*          
+       while(temp != NULL) {// || temp -> s == s) { //get to location of song   && (temp -> s != s))
+          
           if((temp -> s) == s) {
              p = temp;
+             prev = temp;
+             temp = temp -> next;
           }
-*/
-//          else {
+
+          else {
           prev = temp;
           temp = temp -> next;
-//          }
+          }
        }
-//       temp = p;
+       temp = p;
        if (prev == NULL) { //first element
           songs = temp -> next; //move header
           delete temp;
@@ -93,6 +95,7 @@ int UtPod::removeSong(Song const &s) {
        }
        else if (temp != NULL) {
           prev -> next = temp -> next;  //skip over the deleted song
+
           delete temp;
           return 0;
        }
