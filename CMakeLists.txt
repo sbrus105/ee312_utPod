@@ -7,7 +7,7 @@ include_directories(.)
 
 add_executable(ee312_utPod
         Song.h
-        utPod.h
-        utPodDriver.cpp
-        utPod.cpp
+        UtPod.h
+        UtPodDriver.cpp
+        UtPod.cpp
         Song.cpp)

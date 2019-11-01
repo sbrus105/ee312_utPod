@@ -3,7 +3,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "song.h"
+#include "Song.h"
 #include <string>
 using namespace std;
 

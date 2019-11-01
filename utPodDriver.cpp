@@ -12,8 +12,8 @@ You will want to do more complete testing.
 
 #include <cstdlib>
 #include <iostream>
-#include "song.h"
-#include "utPod.h"
+#include "Song.h"
+#include "UtPod.h"
 #include <string>
 
 using namespace std;
@@ -26,13 +26,21 @@ int main(int argc, char *argv[])
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
 
+    cout << "Shuffling one song: "<< endl;
+    t.shuffle();
+    t.showSongList();
+
+    cout << "Sort one song: "<< endl;
+    t.sortSongList();
+
     cout << "Song List: "<< endl;
     t.showSongList();
           
     Song s2("Beatles", "Hey Jude2", 5);
     result = t.addSong(s2);
     cout << "result = " << result << endl;
-
+    cout << "Shuffle two songs: " << endl;
+    t.shuffle();
     cout << "Song List: "<< endl;
     t.showSongList();
        
@@ -51,6 +59,16 @@ int main(int argc, char *argv[])
     cout << "Song List: "<< endl;
     t.showSongList();
 
+    cout << "Adding multiple of same song: "<< endl;
+    Song s6("Beatles", "Hey Jude3", 6);
+    result = t.addSong(s3);
+    cout << "result = " << result << endl;
+    Song s7("Beatles", "Hey Jude3", 6);
+    result = t.addSong(s3);
+    cout << "result = " << result << endl;
+    t.showSongList();
+
+
     cout << "Shuffling...\n" << endl;
     t.shuffle();
     t.showSongList();
@@ -65,6 +83,12 @@ int main(int argc, char *argv[])
 
     result = t.removeSong(s2);
     cout << "delete result = " << result << endl;
+    cout << "Delete again: "<< endl;
+    result = t.removeSong(s2);
+    cout << "delete result = " << result << endl;
+
+    cout << "Deleting song with multiple instances: " << endl;
+    t.removeSong(s6);
 
     cout << "new song list: " << endl;
     t.showSongList();
@@ -89,6 +113,7 @@ int main(int argc, char *argv[])
     
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
+    t.sortSongList();
 
     cout << "Song List: "<< endl;
     t.showSongList();

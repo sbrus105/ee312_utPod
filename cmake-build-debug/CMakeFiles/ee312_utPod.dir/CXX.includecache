@@ -6,27 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/song.h
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/Song.h
 cstdlib
 -
 iostream
 -
 
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPod.cpp
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/UtPod.h
+Song.h
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/Song.h
+
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/UtPodDriver.cpp
 cstdlib
 -
 iostream
 -
-song.h
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/song.h
-utPod.h
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPod.h
+Song.h
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/Song.h
+UtPod.h
+C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/UtPod.h
 string
 -
-ctime
--
-
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/utPod.h
-song.h
-C:/Users/samue/OneDrive/UT 2019-2020/EE 312/utPod/ee312_utPod/song.h
 

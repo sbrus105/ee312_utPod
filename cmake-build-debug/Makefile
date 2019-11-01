@@ -122,86 +122,86 @@ ee312_utPod/fast:
 	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/build
 .PHONY : ee312_utPod/fast
 
-song.obj: song.cpp.obj
+Song.obj: Song.cpp.obj
 
-.PHONY : song.obj
-
-# target to build an object file
-song.cpp.obj:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.obj
-.PHONY : song.cpp.obj
-
-song.i: song.cpp.i
-
-.PHONY : song.i
-
-# target to preprocess a source file
-song.cpp.i:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.i
-.PHONY : song.cpp.i
-
-song.s: song.cpp.s
-
-.PHONY : song.s
-
-# target to generate assembly for a file
-song.cpp.s:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/song.cpp.s
-.PHONY : song.cpp.s
-
-utPod.obj: utPod.cpp.obj
-
-.PHONY : utPod.obj
+.PHONY : Song.obj
 
 # target to build an object file
-utPod.cpp.obj:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPod.cpp.obj
-.PHONY : utPod.cpp.obj
+Song.cpp.obj:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.obj
+.PHONY : Song.cpp.obj
 
-utPod.i: utPod.cpp.i
+Song.i: Song.cpp.i
 
-.PHONY : utPod.i
+.PHONY : Song.i
 
 # target to preprocess a source file
-utPod.cpp.i:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPod.cpp.i
-.PHONY : utPod.cpp.i
+Song.cpp.i:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.i
+.PHONY : Song.cpp.i
 
-utPod.s: utPod.cpp.s
+Song.s: Song.cpp.s
 
-.PHONY : utPod.s
+.PHONY : Song.s
 
 # target to generate assembly for a file
-utPod.cpp.s:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPod.cpp.s
-.PHONY : utPod.cpp.s
+Song.cpp.s:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/Song.cpp.s
+.PHONY : Song.cpp.s
 
-utPodDriver.obj: utPodDriver.cpp.obj
+UtPod.obj: UtPod.cpp.obj
 
-.PHONY : utPodDriver.obj
+.PHONY : UtPod.obj
 
 # target to build an object file
-utPodDriver.cpp.obj:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.obj
-.PHONY : utPodDriver.cpp.obj
+UtPod.cpp.obj:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPod.cpp.obj
+.PHONY : UtPod.cpp.obj
 
-utPodDriver.i: utPodDriver.cpp.i
+UtPod.i: UtPod.cpp.i
 
-.PHONY : utPodDriver.i
+.PHONY : UtPod.i
 
 # target to preprocess a source file
-utPodDriver.cpp.i:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.i
-.PHONY : utPodDriver.cpp.i
+UtPod.cpp.i:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPod.cpp.i
+.PHONY : UtPod.cpp.i
 
-utPodDriver.s: utPodDriver.cpp.s
+UtPod.s: UtPod.cpp.s
 
-.PHONY : utPodDriver.s
+.PHONY : UtPod.s
 
 # target to generate assembly for a file
-utPodDriver.cpp.s:
-	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/utPodDriver.cpp.s
-.PHONY : utPodDriver.cpp.s
+UtPod.cpp.s:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPod.cpp.s
+.PHONY : UtPod.cpp.s
+
+UtPodDriver.obj: UtPodDriver.cpp.obj
+
+.PHONY : UtPodDriver.obj
+
+# target to build an object file
+UtPodDriver.cpp.obj:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPodDriver.cpp.obj
+.PHONY : UtPodDriver.cpp.obj
+
+UtPodDriver.i: UtPodDriver.cpp.i
+
+.PHONY : UtPodDriver.i
+
+# target to preprocess a source file
+UtPodDriver.cpp.i:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPodDriver.cpp.i
+.PHONY : UtPodDriver.cpp.i
+
+UtPodDriver.s: UtPodDriver.cpp.s
+
+.PHONY : UtPodDriver.s
+
+# target to generate assembly for a file
+UtPodDriver.cpp.s:
+	$(MAKE) -f CMakeFiles\ee312_utPod.dir\build.make CMakeFiles/ee312_utPod.dir/UtPodDriver.cpp.s
+.PHONY : UtPodDriver.cpp.s
 
 # Help Target
 help:
@@ -212,15 +212,15 @@ help:
 	@echo ... edit_cache
 	@echo ... ee312_utPod
 	@echo ... rebuild_cache
-	@echo ... song.obj
-	@echo ... song.i
-	@echo ... song.s
-	@echo ... utPod.obj
-	@echo ... utPod.i
-	@echo ... utPod.s
-	@echo ... utPodDriver.obj
-	@echo ... utPodDriver.i
-	@echo ... utPodDriver.s
+	@echo ... Song.obj
+	@echo ... Song.i
+	@echo ... Song.s
+	@echo ... UtPod.obj
+	@echo ... UtPod.i
+	@echo ... UtPod.s
+	@echo ... UtPodDriver.obj
+	@echo ... UtPodDriver.i
+	@echo ... UtPodDriver.s
 .PHONY : help
 
 

@@ -4,8 +4,8 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "song.h"
-#include "utPod.h"
+#include "Song.h"
+#include "UtPod.h"
 #include <string>
 #include <ctime>
 
@@ -72,7 +72,7 @@ int UtPod::removeSong(Song const &s) {
     SongNode *prev = NULL;
     SongNode *p;
     if (songs == NULL)
-       return -1;
+       return NOT_FOUND;
     else {
        while(temp != NULL) {// || temp -> s == s) { //get to location of song   && (temp -> s != s))
           
@@ -80,12 +80,12 @@ int UtPod::removeSong(Song const &s) {
               if (prev == NULL) { //first element
                   songs = temp -> next; //move header
                   delete temp;
-                  return 0;
+                  return SUCCESS;
               }
               else if (temp != NULL) {
                   prev -> next = temp -> next;  //skip over the deleted song
                   delete temp;
-                  return 0;
+                  return SUCCESS;
               }
           }
           else {
@@ -94,8 +94,7 @@ int UtPod::removeSong(Song const &s) {
           }
        }//end of while
     }//end of first else
-    cout << "Reached bad code spot"<<endl;
-    return -1;
+    return (NOT_FOUND);
 }//end of removeSong
 
 

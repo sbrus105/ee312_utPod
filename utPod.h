@@ -3,7 +3,7 @@
 
 #ifndef UTPOD_H
 #define UTPOD_H
-#include "song.h"
+#include "Song.h"
 
 //UtPod class declaration
 class UtPod
