@@ -13,22 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3834af7a-ecbd-405c-a2db-f47e7a785bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ee312_utPod.dir/song.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ee312_utPod.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ee312_utPod.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/song.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPod.h" beforeDir="false" afterPath="$PROJECT_DIR$/utPod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utPodDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utPodDriver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Song.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +90,7 @@
       <workItem from="1572539271623" duration="7823000" />
       <workItem from="1572556381206" duration="1956000" />
       <workItem from="1572626300888" duration="128000" />
-      <workItem from="1572626525164" duration="5443000" />
+      <workItem from="1572626525164" duration="6549000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up more files, song.cpp, etc.">
       <created>1571711086526</created>
@@ -225,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572629291516</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Full driver &amp; working code">
+      <created>1572632139313</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572632139313</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +251,8 @@
     <MESSAGE value="working" />
     <MESSAGE value="removesong is not working, comparison between temp -&gt; s and the parameter 's' is reading false" />
     <MESSAGE value="appear to be fully functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="appear to be fully functional" />
+    <MESSAGE value="Full driver &amp; working code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full driver &amp; working code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

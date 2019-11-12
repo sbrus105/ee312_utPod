@@ -1,2 +1,4 @@
-# ee312_utPod
- Partnered with Collin Torok
+ ee312_utPod
+ Sam Brus and Collin Torok
+
+run program by using linux command ./test
